@@ -1,0 +1,29 @@
+﻿<Window x:Class="cifrul_n.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cifrul_n"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Cifrul +n" FontSize="18" FontWeight="Bold"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <TextBlock Text="Valoarea n (0-25): " VerticalAlignment="Center"/>
+                <TextBox x:Name="TxtN" Width="50" Text="3"/>
+            </StackPanel>
+
+            <TextBox x:Name="TxtInput" Height="60" TextWrapping="Wrap" Margin="0,5"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Criptare (+n)" Click="BtnCriptare_Click" Width="100" Margin="5"/>
+                <Button Content="Decriptare (-n)" Click="BtnDecriptare_Click" Width="100" Margin="5"/>
+                <Button Content="Criptanaliză" Click="BtnAnaliza_Click" Width="100" Margin="5"/>
+            </StackPanel>
+
+            <TextBox x:Name="TxtResult" Height="100" IsReadOnly="True" Margin="0,10" VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
+    </Grid>
+</Window>
